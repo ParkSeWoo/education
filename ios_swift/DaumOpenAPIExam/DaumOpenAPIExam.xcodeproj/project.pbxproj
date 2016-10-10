@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		973AE3491DA0B3730034613C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973AE3481DA0B3730034613C /* AppDelegate.swift */; };
+		973AE34B1DA0B3730034613C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973AE34A1DA0B3730034613C /* ViewController.swift */; };
+		973AE34E1DA0B3730034613C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973AE34C1DA0B3730034613C /* Main.storyboard */; };
+		973AE3501DA0B3730034613C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973AE34F1DA0B3730034613C /* Assets.xcassets */; };
+		973AE3531DA0B3730034613C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973AE3511DA0B3730034613C /* LaunchScreen.storyboard */; };
+		973AE35E1DA0B3730034613C /* DaumOpenAPIExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973AE35D1DA0B3730034613C /* DaumOpenAPIExamTests.swift */; };
+		973AE3691DA0B3730034613C /* DaumOpenAPIExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973AE3681DA0B3730034613C /* DaumOpenAPIExamUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		973AE35A1DA0B3730034613C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 973AE33D1DA0B3730034613C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 973AE3441DA0B3730034613C;
+			remoteInfo = DaumOpenAPIExam;
+		};
+		973AE3651DA0B3730034613C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 973AE33D1DA0B3730034613C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 973AE3441DA0B3730034613C;
+			remoteInfo = DaumOpenAPIExam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		973AE3451DA0B3730034613C /* DaumOpenAPIExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumOpenAPIExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		973AE3481DA0B3730034613C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		973AE34A1DA0B3730034613C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		973AE34D1DA0B3730034613C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		973AE34F1DA0B3730034613C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		973AE3521DA0B3730034613C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		973AE3541DA0B3730034613C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973AE3591DA0B3730034613C /* DaumOpenAPIExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaumOpenAPIExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		973AE35D1DA0B3730034613C /* DaumOpenAPIExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumOpenAPIExamTests.swift; sourceTree = "<group>"; };
+		973AE35F1DA0B3730034613C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973AE3641DA0B3730034613C /* DaumOpenAPIExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaumOpenAPIExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		973AE3681DA0B3730034613C /* DaumOpenAPIExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumOpenAPIExamUITests.swift; sourceTree = "<group>"; };
+		973AE36A1DA0B3730034613C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		973AE3421DA0B3730034613C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973AE3561DA0B3730034613C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973AE3611DA0B3730034613C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		973AE33C1DA0B3730034613C = {
+			isa = PBXGroup;
+			children = (
+				973AE3471DA0B3730034613C /* DaumOpenAPIExam */,
+				973AE35C1DA0B3730034613C /* DaumOpenAPIExamTests */,
+				973AE3671DA0B3730034613C /* DaumOpenAPIExamUITests */,
+				973AE3461DA0B3730034613C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		973AE3461DA0B3730034613C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				973AE3451DA0B3730034613C /* DaumOpenAPIExam.app */,
+				973AE3591DA0B3730034613C /* DaumOpenAPIExamTests.xctest */,
+				973AE3641DA0B3730034613C /* DaumOpenAPIExamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		973AE3471DA0B3730034613C /* DaumOpenAPIExam */ = {
+			isa = PBXGroup;
+			children = (
+				973AE3481DA0B3730034613C /* AppDelegate.swift */,
+				973AE34A1DA0B3730034613C /* ViewController.swift */,
+				973AE34C1DA0B3730034613C /* Main.storyboard */,
+				973AE34F1DA0B3730034613C /* Assets.xcassets */,
+				973AE3511DA0B3730034613C /* LaunchScreen.storyboard */,
+				973AE3541DA0B3730034613C /* Info.plist */,
+			);
+			path = DaumOpenAPIExam;
+			sourceTree = "<group>";
+		};
+		973AE35C1DA0B3730034613C /* DaumOpenAPIExamTests */ = {
+			isa = PBXGroup;
+			children = (
+				973AE35D1DA0B3730034613C /* DaumOpenAPIExamTests.swift */,
+				973AE35F1DA0B3730034613C /* Info.plist */,
+			);
+			path = DaumOpenAPIExamTests;
+			sourceTree = "<group>";
+		};
+		973AE3671DA0B3730034613C /* DaumOpenAPIExamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				973AE3681DA0B3730034613C /* DaumOpenAPIExamUITests.swift */,
+				973AE36A1DA0B3730034613C /* Info.plist */,
+			);
+			path = DaumOpenAPIExamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		973AE3441DA0B3730034613C /* DaumOpenAPIExam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973AE36D1DA0B3730034613C /* Build configuration list for PBXNativeTarget "DaumOpenAPIExam" */;
+			buildPhases = (
+				973AE3411DA0B3730034613C /* Sources */,
+				973AE3421DA0B3730034613C /* Frameworks */,
+				973AE3431DA0B3730034613C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaumOpenAPIExam;
+			productName = DaumOpenAPIExam;
+			productReference = 973AE3451DA0B3730034613C /* DaumOpenAPIExam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		973AE3581DA0B3730034613C /* DaumOpenAPIExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973AE3701DA0B3730034613C /* Build configuration list for PBXNativeTarget "DaumOpenAPIExamTests" */;
+			buildPhases = (
+				973AE3551DA0B3730034613C /* Sources */,
+				973AE3561DA0B3730034613C /* Frameworks */,
+				973AE3571DA0B3730034613C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				973AE35B1DA0B3730034613C /* PBXTargetDependency */,
+			);
+			name = DaumOpenAPIExamTests;
+			productName = DaumOpenAPIExamTests;
+			productReference = 973AE3591DA0B3730034613C /* DaumOpenAPIExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		973AE3631DA0B3730034613C /* DaumOpenAPIExamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973AE3731DA0B3730034613C /* Build configuration list for PBXNativeTarget "DaumOpenAPIExamUITests" */;
+			buildPhases = (
+				973AE3601DA0B3730034613C /* Sources */,
+				973AE3611DA0B3730034613C /* Frameworks */,
+				973AE3621DA0B3730034613C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				973AE3661DA0B3730034613C /* PBXTargetDependency */,
+			);
+			name = DaumOpenAPIExamUITests;
+			productName = DaumOpenAPIExamUITests;
+			productReference = 973AE3641DA0B3730034613C /* DaumOpenAPIExamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		973AE33D1DA0B3730034613C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = plurry;
+				TargetAttributes = {
+					973AE3441DA0B3730034613C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					973AE3581DA0B3730034613C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 973AE3441DA0B3730034613C;
+					};
+					973AE3631DA0B3730034613C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 973AE3441DA0B3730034613C;
+					};
+				};
+			};
+			buildConfigurationList = 973AE3401DA0B3730034613C /* Build configuration list for PBXProject "DaumOpenAPIExam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 973AE33C1DA0B3730034613C;
+			productRefGroup = 973AE3461DA0B3730034613C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				973AE3441DA0B3730034613C /* DaumOpenAPIExam */,
+				973AE3581DA0B3730034613C /* DaumOpenAPIExamTests */,
+				973AE3631DA0B3730034613C /* DaumOpenAPIExamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		973AE3431DA0B3730034613C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973AE3531DA0B3730034613C /* LaunchScreen.storyboard in Resources */,
+				973AE3501DA0B3730034613C /* Assets.xcassets in Resources */,
+				973AE34E1DA0B3730034613C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973AE3571DA0B3730034613C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973AE3621DA0B3730034613C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		973AE3411DA0B3730034613C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973AE34B1DA0B3730034613C /* ViewController.swift in Sources */,
+				973AE3491DA0B3730034613C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973AE3551DA0B3730034613C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973AE35E1DA0B3730034613C /* DaumOpenAPIExamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973AE3601DA0B3730034613C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973AE3691DA0B3730034613C /* DaumOpenAPIExamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		973AE35B1DA0B3730034613C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 973AE3441DA0B3730034613C /* DaumOpenAPIExam */;
+			targetProxy = 973AE35A1DA0B3730034613C /* PBXContainerItemProxy */;
+		};
+		973AE3661DA0B3730034613C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 973AE3441DA0B3730034613C /* DaumOpenAPIExam */;
+			targetProxy = 973AE3651DA0B3730034613C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		973AE34C1DA0B3730034613C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				973AE34D1DA0B3730034613C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		973AE3511DA0B3730034613C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				973AE3521DA0B3730034613C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		973AE36B1DA0B3730034613C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		973AE36C1DA0B3730034613C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		973AE36E1DA0B3730034613C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DaumOpenAPIExam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.DaumOpenAPIExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		973AE36F1DA0B3730034613C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DaumOpenAPIExam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.DaumOpenAPIExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		973AE3711DA0B3730034613C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DaumOpenAPIExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.DaumOpenAPIExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaumOpenAPIExam.app/DaumOpenAPIExam";
+			};
+			name = Debug;
+		};
+		973AE3721DA0B3730034613C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DaumOpenAPIExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.DaumOpenAPIExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaumOpenAPIExam.app/DaumOpenAPIExam";
+			};
+			name = Release;
+		};
+		973AE3741DA0B3730034613C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DaumOpenAPIExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.DaumOpenAPIExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DaumOpenAPIExam;
+			};
+			name = Debug;
+		};
+		973AE3751DA0B3730034613C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DaumOpenAPIExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.DaumOpenAPIExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DaumOpenAPIExam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		973AE3401DA0B3730034613C /* Build configuration list for PBXProject "DaumOpenAPIExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973AE36B1DA0B3730034613C /* Debug */,
+				973AE36C1DA0B3730034613C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		973AE36D1DA0B3730034613C /* Build configuration list for PBXNativeTarget "DaumOpenAPIExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973AE36E1DA0B3730034613C /* Debug */,
+				973AE36F1DA0B3730034613C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		973AE3701DA0B3730034613C /* Build configuration list for PBXNativeTarget "DaumOpenAPIExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973AE3711DA0B3730034613C /* Debug */,
+				973AE3721DA0B3730034613C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		973AE3731DA0B3730034613C /* Build configuration list for PBXNativeTarget "DaumOpenAPIExamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973AE3741DA0B3730034613C /* Debug */,
+				973AE3751DA0B3730034613C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 973AE33D1DA0B3730034613C /* Project object */;
+}
