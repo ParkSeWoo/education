@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97EEF0481D85119F00EA96C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EEF0471D85119F00EA96C8 /* AppDelegate.swift */; };
+		97EEF04A1D85119F00EA96C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EEF0491D85119F00EA96C8 /* ViewController.swift */; };
+		97EEF04D1D85119F00EA96C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EEF04B1D85119F00EA96C8 /* Main.storyboard */; };
+		97EEF04F1D85119F00EA96C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EEF04E1D85119F00EA96C8 /* Assets.xcassets */; };
+		97EEF0521D85119F00EA96C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EEF0501D85119F00EA96C8 /* LaunchScreen.storyboard */; };
+		97EEF05D1D85119F00EA96C8 /* StreamMovieExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EEF05C1D85119F00EA96C8 /* StreamMovieExamTests.swift */; };
+		97EEF0681D85119F00EA96C8 /* StreamMovieExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EEF0671D85119F00EA96C8 /* StreamMovieExamUITests.swift */; };
+		97EEF0761D8511B100EA96C8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EEF0751D8511B100EA96C8 /* MediaPlayer.framework */; };
+		97EEF0781D85134200EA96C8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EEF0771D85134200EA96C8 /* AVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97EEF0591D85119F00EA96C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97EEF03C1D85119F00EA96C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97EEF0431D85119F00EA96C8;
+			remoteInfo = StreamMovieExam;
+		};
+		97EEF0641D85119F00EA96C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97EEF03C1D85119F00EA96C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97EEF0431D85119F00EA96C8;
+			remoteInfo = StreamMovieExam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97EEF0441D85119F00EA96C8 /* StreamMovieExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamMovieExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EEF0471D85119F00EA96C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97EEF0491D85119F00EA96C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97EEF04C1D85119F00EA96C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97EEF04E1D85119F00EA96C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97EEF0511D85119F00EA96C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97EEF0531D85119F00EA96C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EEF0581D85119F00EA96C8 /* StreamMovieExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamMovieExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EEF05C1D85119F00EA96C8 /* StreamMovieExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamMovieExamTests.swift; sourceTree = "<group>"; };
+		97EEF05E1D85119F00EA96C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EEF0631D85119F00EA96C8 /* StreamMovieExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamMovieExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EEF0671D85119F00EA96C8 /* StreamMovieExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamMovieExamUITests.swift; sourceTree = "<group>"; };
+		97EEF0691D85119F00EA96C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EEF0751D8511B100EA96C8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		97EEF0771D85134200EA96C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97EEF0411D85119F00EA96C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEF0781D85134200EA96C8 /* AVKit.framework in Frameworks */,
+				97EEF0761D8511B100EA96C8 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EEF0551D85119F00EA96C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EEF0601D85119F00EA96C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97EEF03B1D85119F00EA96C8 = {
+			isa = PBXGroup;
+			children = (
+				97EEF0771D85134200EA96C8 /* AVKit.framework */,
+				97EEF0751D8511B100EA96C8 /* MediaPlayer.framework */,
+				97EEF0461D85119F00EA96C8 /* StreamMovieExam */,
+				97EEF05B1D85119F00EA96C8 /* StreamMovieExamTests */,
+				97EEF0661D85119F00EA96C8 /* StreamMovieExamUITests */,
+				97EEF0451D85119F00EA96C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97EEF0451D85119F00EA96C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97EEF0441D85119F00EA96C8 /* StreamMovieExam.app */,
+				97EEF0581D85119F00EA96C8 /* StreamMovieExamTests.xctest */,
+				97EEF0631D85119F00EA96C8 /* StreamMovieExamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97EEF0461D85119F00EA96C8 /* StreamMovieExam */ = {
+			isa = PBXGroup;
+			children = (
+				97EEF0471D85119F00EA96C8 /* AppDelegate.swift */,
+				97EEF0491D85119F00EA96C8 /* ViewController.swift */,
+				97EEF04B1D85119F00EA96C8 /* Main.storyboard */,
+				97EEF04E1D85119F00EA96C8 /* Assets.xcassets */,
+				97EEF0501D85119F00EA96C8 /* LaunchScreen.storyboard */,
+				97EEF0531D85119F00EA96C8 /* Info.plist */,
+			);
+			path = StreamMovieExam;
+			sourceTree = "<group>";
+		};
+		97EEF05B1D85119F00EA96C8 /* StreamMovieExamTests */ = {
+			isa = PBXGroup;
+			children = (
+				97EEF05C1D85119F00EA96C8 /* StreamMovieExamTests.swift */,
+				97EEF05E1D85119F00EA96C8 /* Info.plist */,
+			);
+			path = StreamMovieExamTests;
+			sourceTree = "<group>";
+		};
+		97EEF0661D85119F00EA96C8 /* StreamMovieExamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97EEF0671D85119F00EA96C8 /* StreamMovieExamUITests.swift */,
+				97EEF0691D85119F00EA96C8 /* Info.plist */,
+			);
+			path = StreamMovieExamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97EEF0431D85119F00EA96C8 /* StreamMovieExam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EEF06C1D85119F00EA96C8 /* Build configuration list for PBXNativeTarget "StreamMovieExam" */;
+			buildPhases = (
+				97EEF0401D85119F00EA96C8 /* Sources */,
+				97EEF0411D85119F00EA96C8 /* Frameworks */,
+				97EEF0421D85119F00EA96C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamMovieExam;
+			productName = StreamMovieExam;
+			productReference = 97EEF0441D85119F00EA96C8 /* StreamMovieExam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97EEF0571D85119F00EA96C8 /* StreamMovieExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EEF06F1D85119F00EA96C8 /* Build configuration list for PBXNativeTarget "StreamMovieExamTests" */;
+			buildPhases = (
+				97EEF0541D85119F00EA96C8 /* Sources */,
+				97EEF0551D85119F00EA96C8 /* Frameworks */,
+				97EEF0561D85119F00EA96C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97EEF05A1D85119F00EA96C8 /* PBXTargetDependency */,
+			);
+			name = StreamMovieExamTests;
+			productName = StreamMovieExamTests;
+			productReference = 97EEF0581D85119F00EA96C8 /* StreamMovieExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97EEF0621D85119F00EA96C8 /* StreamMovieExamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EEF0721D85119F00EA96C8 /* Build configuration list for PBXNativeTarget "StreamMovieExamUITests" */;
+			buildPhases = (
+				97EEF05F1D85119F00EA96C8 /* Sources */,
+				97EEF0601D85119F00EA96C8 /* Frameworks */,
+				97EEF0611D85119F00EA96C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97EEF0651D85119F00EA96C8 /* PBXTargetDependency */,
+			);
+			name = StreamMovieExamUITests;
+			productName = StreamMovieExamUITests;
+			productReference = 97EEF0631D85119F00EA96C8 /* StreamMovieExamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97EEF03C1D85119F00EA96C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = plurry;
+				TargetAttributes = {
+					97EEF0431D85119F00EA96C8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					97EEF0571D85119F00EA96C8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 97EEF0431D85119F00EA96C8;
+					};
+					97EEF0621D85119F00EA96C8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 97EEF0431D85119F00EA96C8;
+					};
+				};
+			};
+			buildConfigurationList = 97EEF03F1D85119F00EA96C8 /* Build configuration list for PBXProject "StreamMovieExam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97EEF03B1D85119F00EA96C8;
+			productRefGroup = 97EEF0451D85119F00EA96C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97EEF0431D85119F00EA96C8 /* StreamMovieExam */,
+				97EEF0571D85119F00EA96C8 /* StreamMovieExamTests */,
+				97EEF0621D85119F00EA96C8 /* StreamMovieExamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97EEF0421D85119F00EA96C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEF0521D85119F00EA96C8 /* LaunchScreen.storyboard in Resources */,
+				97EEF04F1D85119F00EA96C8 /* Assets.xcassets in Resources */,
+				97EEF04D1D85119F00EA96C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EEF0561D85119F00EA96C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EEF0611D85119F00EA96C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97EEF0401D85119F00EA96C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEF04A1D85119F00EA96C8 /* ViewController.swift in Sources */,
+				97EEF0481D85119F00EA96C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EEF0541D85119F00EA96C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEF05D1D85119F00EA96C8 /* StreamMovieExamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EEF05F1D85119F00EA96C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEF0681D85119F00EA96C8 /* StreamMovieExamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97EEF05A1D85119F00EA96C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97EEF0431D85119F00EA96C8 /* StreamMovieExam */;
+			targetProxy = 97EEF0591D85119F00EA96C8 /* PBXContainerItemProxy */;
+		};
+		97EEF0651D85119F00EA96C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97EEF0431D85119F00EA96C8 /* StreamMovieExam */;
+			targetProxy = 97EEF0641D85119F00EA96C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97EEF04B1D85119F00EA96C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97EEF04C1D85119F00EA96C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97EEF0501D85119F00EA96C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97EEF0511D85119F00EA96C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97EEF06A1D85119F00EA96C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97EEF06B1D85119F00EA96C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97EEF06D1D85119F00EA96C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StreamMovieExam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.StreamMovieExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97EEF06E1D85119F00EA96C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StreamMovieExam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.StreamMovieExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		97EEF0701D85119F00EA96C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StreamMovieExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.StreamMovieExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamMovieExam.app/StreamMovieExam";
+			};
+			name = Debug;
+		};
+		97EEF0711D85119F00EA96C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StreamMovieExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.StreamMovieExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamMovieExam.app/StreamMovieExam";
+			};
+			name = Release;
+		};
+		97EEF0731D85119F00EA96C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StreamMovieExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.StreamMovieExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StreamMovieExam;
+			};
+			name = Debug;
+		};
+		97EEF0741D85119F00EA96C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StreamMovieExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.plurry.StreamMovieExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StreamMovieExam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97EEF03F1D85119F00EA96C8 /* Build configuration list for PBXProject "StreamMovieExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EEF06A1D85119F00EA96C8 /* Debug */,
+				97EEF06B1D85119F00EA96C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97EEF06C1D85119F00EA96C8 /* Build configuration list for PBXNativeTarget "StreamMovieExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EEF06D1D85119F00EA96C8 /* Debug */,
+				97EEF06E1D85119F00EA96C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		97EEF06F1D85119F00EA96C8 /* Build configuration list for PBXNativeTarget "StreamMovieExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EEF0701D85119F00EA96C8 /* Debug */,
+				97EEF0711D85119F00EA96C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		97EEF0721D85119F00EA96C8 /* Build configuration list for PBXNativeTarget "StreamMovieExamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EEF0731D85119F00EA96C8 /* Debug */,
+				97EEF0741D85119F00EA96C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97EEF03C1D85119F00EA96C8 /* Project object */;
+}
