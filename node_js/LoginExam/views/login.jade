@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST")
+    input(type="text" name="id")
+    p
+    input(type="password" name="password")
+    p
+    input(type="submit" value="Login")

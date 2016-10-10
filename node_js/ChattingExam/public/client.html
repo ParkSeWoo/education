@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>채팅 클라이언트</title>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	var socket = null;
+	$(document).ready(function() {
+		socket = io.connect();//서버에 접속 시도하여 socket 객체 얻어옴
+		
+		$('#chat_input').keypress(function(evt) {
+			if ((evt.keyCode || evt.which) == 13) {//ENTER키를 눌렀을 경우
+				evt.preventDefault();
+				chat_input();
+			}
+		});
+		$('#chat_id').keypress(function(evt) {
+			if ((evt.keyCode || evt.which) == 13) {
+				evt.preventDefault();
+				connection();
+			}
+		});
+		
+		socket.on('chat_fail', function(data) {
+			data = JSON.parse(data);
+			alert(data.chat_id+'님은 이미 접속된 ID입니다.');
+		});
+		socket.on('chat_join', function(data) {
+			//alert(data);
+			data = JSON.parse(data);
+			displayUserList(data);
+			$('#chat_id').attr('disabled', true);
+		});
+		socket.on('chat_user', function(data) {
+			data = JSON.parse(data);
+			displayUserList(data);
+		});
+		socket.on('message', function(data) {
+			data = JSON.parse(data);
+			data.message = decodeURIComponent(data.message);
+			data.message = data.message.replace(/&/g, '&amp;');
+			data.message = data.message.replace(/\"/g, '&quot;');
+			data.message = data.message.replace(/\'/g, '&#39;');
+			data.message = data.message.replace(/</g, '&lt;');
+			data.message = data.message.replace(/>/g, '&gt;');
+			$('#chat_list').append('<li>'+data.message+'</li>');
+		});
+		socket.on('messages', function(data) {
+			//alert(data);
+			data = JSON.parse(data);//문자열->객체 변환
+			for (var i = 0; i < data.length; i++) {
+				var message = data[i].message;
+				message = decodeURIComponent(message);
+				message = message.replace(/&/g, '&amp;');
+				message = message.replace(/\"/g, '&quot;');
+				message = message.replace(/\'/g, '&#39;');
+				message = message.replace(/</g, '&lt;');
+				message = message.replace(/>/g, '&gt;');
+				$('#chat_list').append('<li>'+message+'</li>');
+			}
+		});
+	});
+	var chat_id = '';
+	function displayUserList(data) {
+		$('#chat_user_list').empty();//현재 접속된 사용자 목록 출력
+		for (var i = 0; i < data.length; i++) {
+			if (data[i] == chat_id) {//자신일 경우
+				$('#chat_user_list').append('<li><strong>'+
+						data[i]+' (me)</strong></li>');
+			} else {//다른 사용자일경우
+				$('#chat_user_list').append('<li>'+data[i]+'</li>');
+			}
+		}
+		$('#now_user_cnt').html(data.length);//현재 접속된 사용자 수 표시
+	}
+	function connection() {
+		chat_id = $('#chat_id').val();
+		if (chat_id == '' || chat_id == 'ID 입력') {
+			alert('ID를 입력해주세요.');
+			$('#chat_id').focus();
+		} else {
+			socket.emit('chat_conn', 
+					JSON.stringify({chat_id:chat_id}));
+			$('#chat_list').html('');
+			$('#chat_user_list').html('');
+		}
+	}
+	function chat_input() {
+		//사용자가 입력한 메시지 내용을 URI 인코딩 실시
+		var encodedMsg = encodeURIComponent($('#chat_input').val());
+		socket.emit('message', 
+				JSON.stringify({chat_id:chat_id,message:encodedMsg}));
+		$('#chat_input').val('');//메시지 입력창 초기화
+	}
+	function chat_out() {
+		socket.emit('chat_leave', JSON.stringify({chat_id:chat_id}));
+		$('#chat_id').attr('disabled',false);//클라이언트 초기화
+		$('#chat_id').val('ID 입력');
+		$('#chat_list').html('');
+		$('#chat_user_list').html('');
+		chat_id = '';
+	}
+</script>
+</head>
+<body>
+	<H1>채팅방</H1>
+	<div>
+		<div><!-- 로그인 영역 -->
+			<input type="text" id="chat_id" value="ID 입력" onclick="$(this).val('');"/>
+			<a href="javascript:connection();">접속하기</a>
+		</div>
+		<div>
+			<strong>현재 접속자수</strong>:<span id="now_user_cnt">-</span>
+		</div>
+		<div><!-- 채팅창 영역 -->
+			<div>
+				<ul id="chat_list"></ul>
+			</div>
+			<div>
+				<ul id="chat_user_list"></ul>
+			</div>
+			<div>
+				<input type="text" id="chat_input" value="대화글을 입력하세요" onclick="$(this).val('');"/>
+				<a href="javascript:chat_input();">입력</a>&nbsp;&nbsp;&nbsp;
+				<a href="javascript:chat_out();">나가기</a>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

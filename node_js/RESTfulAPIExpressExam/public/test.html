@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>RESTful API 테스트 페이지</title>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	var socket = null;
+	$(document).ready(function() {
+		$("#deleteButton").click(function() {
+			deleteMovieList();
+		});
+		$("#listButton").click(function(){
+			  viewMovieList();
+		});		
+		$("#addButton").click(function() {
+			var title = $('#movie_title').val();
+			var director = $('#movie_director').val();
+			var review = $('#movie_review').val();
+			$.ajax({type:'post', url:'/movies',
+				data:'title='+title+'&director='+director+'&review='+review,
+				success:function(data) {
+					alert(JSON.stringify(data));	
+				}
+			});
+		});
+	});
+	function deleteMovie(movie_title) {
+		$.ajax({type:'delete',url:'/movies/'+movie_title, dataType:'json',
+			success:function(data) {
+				if (data.result == true) {
+					viewMovieList();
+				} else {
+					alert(JSON.stringify(data));	
+				}
+			}
+		});	
+	}
+	function deleteMovieList() {
+		$.ajax({type:'delete',url:'/movies',dataType:'json',
+			success:function(data) {
+				if (data.result == true) {
+					viewMovieList();
+				} else {
+					alert(JSON.stringify(data));
+				}
+			}
+		});
+	}
+	function viewDetail(movie_title) {
+		$.ajax({type:'get', url:'/movies/'+movie_title, dataType:'json',
+			success:function(data) {
+				//alert(JSON.stringify(data));
+				$('#movie_detail').html('감독:'+data.director+'&nbsp;영화제목:'+data.title+'<BR>리뷰:'+data.review);
+			}
+		});
+	}
+	function viewMovieList() {
+		$.ajax({
+	          type: 'get'
+	        , url: '/movies'
+	        , dataType : 'json'
+	        , success: function(data) {
+	        		$("#listDiv").html(JSON.stringify(data));
+	        		$("#movie_list").html('');
+	        		for (var i = 0; i < data.movieList.length; i++) {
+	        			$("#movie_list").append('<li><a href="javascript:viewDetail(\''+data.movieList[i]+
+	        					'\');">'+data.movieList[i]+'</a>&nbsp;<a href="javascript:deleteMovie(\''+
+	        					data.movieList[i]+'\');">[삭제]</a></li>');
+	        		}
+			}
+	  });	
+	}
+</script>
+</head>
+<body>
+<H1>RESTful API 테스트</H1>
+<input type="button" id="listButton" value="리스트출력" />
+<br/>
+<div id="listDiv"></div>
+<ul id="movie_list">
+</ul>
+<div id="movie_detail"></div>
+<br/><br/>
+<input type="text" id="movie_title" />
+<input type="text" id="movie_director" />
+<BR>
+<textarea rows="5" cols="20" id="movie_review"></textarea>
+<input type="button" id="addButton" value="영화정보추가" />
+<br/><br/>
+<input type="button" id="deleteButton" value="영화목록 삭제"/>
+
+</body>

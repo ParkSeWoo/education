@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST")
+    p id:
+    input(type="text" name="id") 
+    p 
+    p password: 
+    input(type="password" name="password")
+    p
+    p admin: 
+    input(type="checkbox" name="admin")
+    p
+    input(type="submit" value="Join")
